@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<body>
+	<label>Number 1:</label>
+	<input type="number" id="box1"><br><br>
+
+	<label>Number 2:</label>
+	<input type="number" id="box2"><br><br>
+<button onclick="sum()">+</button><br><br>
+<button onclick="multiply()">*</button><br><br>
+
+<button onclick="sub()">-</button><br><br>
+<button onclick="divide()">/</button><br><br>
+
+
+<label>result is:</label>
+<span id="box3" ></span>
+<br><br>
+
+	<script>
+		
+function sum()
+{
+	document.getElementById('box3').innerText=
+	parseInt(document.getElementById('box1').
+		value)+parseInt(document.getElementById('box2').value)
+}
+
+function multiply()
+{
+	document.getElementById('box3').innerText=
+	parseInt(document.getElementById('box1').
+		value)*parseInt(document.getElementById('box2').value)
+}
+
+function sub()
+{
+	document.getElementById('box3').innerText=
+	parseInt(document.getElementById('box1').
+		value)-parseInt(document.getElementById('box2').value)
+}
+
+function divide()
+{
+	document.getElementById('box3').innerText=
+	parseInt(document.getElementById('box1').
+		value)/parseInt(document.getElementById('box2').value)
+}
+	</script> 
+
+</body>
+</html>
